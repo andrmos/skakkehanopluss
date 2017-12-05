@@ -16,7 +16,8 @@
 			"www.dn.no",
 			"www.ba.no",
 			"www.an.no",
-			"www.itromso.no",
+                        "www.itromso.no",
+                        "www.aftenposten.no"
 		]
 
     function getSiteElements (host) {
@@ -117,6 +118,15 @@
                 var targets = $('[class^=\'am-premium-\']')
                 $.each(targets, function (index, element) {
                     elements.push($(element).closest('.am-gridComp-item'))
+                    count++
+                })
+
+                break
+
+            case 'www.aftenposten.no':
+                var targets = $('.df-skin-art-For-abonnenter')
+                $.each(targets, function (index, element) {
+                    elements.push($(this))
                     count++
                 })
 

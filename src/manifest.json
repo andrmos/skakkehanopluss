@@ -45,6 +45,7 @@
         "*://*.ba.no/*",
         "*://*.an.no/*",
         "*://*.itromso.no/*",
+        "*://*.aftenposten.no/*",
         "notifications",
         "storage"
     ],
@@ -72,7 +73,8 @@
                 "*://*.dn.no/",
                 "*://*.ba.no/",
                 "*://*.an.no/",
-                "*://*.itromso.no/"
+                "*://*.itromso.no/",
+                "*://*.aftenposten.no/"
             ],
             "js": ["jquery-3.2.1.min.js", "content_scripts/remove_plus.js"]
         }
